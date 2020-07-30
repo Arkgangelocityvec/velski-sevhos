@@ -1,0 +1,14 @@
+@import "fonts";
+@import "vars";
+
+body{
+    margin: 0;
+    font-family: $roboto;
+};
+
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+};
+

@@ -1,0 +1,14 @@
+@import "../components/search";
+
+.header{
+   // background: url('../../images/background.png');
+    background-position: center center;
+    background-size: cover;
+
+    //first row
+    .header__first-row{
+        display:flex;
+        justify-content: space-between;
+    }
+
+}
