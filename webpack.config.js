@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     
@@ -19,10 +18,7 @@ module.exports = {
     },
 
     plugins:[
-        new ExtractTextPlugin('style.scss'),
-        
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
-        
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/pug/pages/index.pug'
@@ -38,32 +34,8 @@ module.exports = {
     module:{
         rules: [
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
-            },
-
-            {
-                test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                url: false,
-                                minimize: true,
-                                sourceMap: true
-                            }
-                        },
-
-                        {
-                            loader: 'sass-loader',
-                            options: {
-                                sourceMap: true
-                            }
-                        },  
-                    ]
-                })
+                test: /\.s?css$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
             },
 
             {
