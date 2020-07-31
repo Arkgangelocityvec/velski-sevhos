@@ -1,8 +1,22 @@
 header.header
     .header__container.container
         .header__first-row 
-            .header__left
+            .header__first-row-left
                 a.header__logo(href="/")
                     img.header__logo-img(src="../../images/background.png")
                 span Вельский сельскохозяйственный техникум имени Г.И. Шибанова
-            include ../components/search.pug
+            .header__first-row-right
+                include ../components/header/search.pug
+        
+        .header__second-row
+            include ../components/header/navigation_menu.pug
+        
+        .header__third-row
+            .header__welcome
+                h1 ДОБРО ПОЖАЛОВАТЬ
+                p "Вельский сельскохозяйственный техникум имени Г.И. Шибанова"
+                button.header__detail-btn
+                    span Подробнее
+                    img.header_detail-btn-arrow
+
+

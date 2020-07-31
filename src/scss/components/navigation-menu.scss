@@ -1,0 +1,15 @@
+//headers navigation menu
+.header__navigation-menu ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
+.header__navigation-menu ul a{
+    display: flex;
+    justify-content: space-between;
+}
+
+
