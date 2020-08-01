@@ -3,7 +3,22 @@
     display: flex;
 }
 
-.header__search-btn{
+.header__search-input input{
+    width: 480px;
+    height: 40px;
+    
+    border: 0px;
+
     background-color: transparent;
-    border-color: black;
+    border-bottom: 2px solid $white;
+    
+    outline: none;
+}
+
+.header__search-input input::placeholder{
+    color: $white;
+}
+
+.header__input-text{
+    color: $white;
 }

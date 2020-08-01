@@ -1,5 +1,13 @@
 .header__search
     .header__search-input
-        input(type="text" placeholder="Поиск")
+        input.header__input-text(type="text" placeholder="Поиск")
     button.header__search-btn
-        img.header__search-loupe-btn
+        a(href="/")
+            img.header__search-loupe-btn(src=require('icons/search.svg'))
+    button.header__site-map-btn
+        a(href="/")
+            img.header__site-map-btn-img(src=require('icons/site-map.svg'))
+    button.header__site-eye-btn
+        a(href="/")
+            img.header__site-eye-btn-img(src=require('icons/eye.svg'))
+        

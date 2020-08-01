@@ -7,6 +7,19 @@
         flex-direction: column;
     }
 
+    .header__welcome-title{
+        font-weight: 500;
+        font-size: 72px;
+        line-height: 88px;
+    }
+
+    .header__welcome-body{
+        font-weight: normal;
+        font-size: 26px;
+
+        max-width: 420px;
+    }
+
     .header__detail-btn{
         width: 260px;
         height: 65px;
@@ -19,6 +32,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .header__detail-btn-arrow{
+        padding-left: 20px;
     }
 
 }
