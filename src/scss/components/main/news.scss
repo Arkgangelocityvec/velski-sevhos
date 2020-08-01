@@ -1,9 +1,13 @@
-.news__heading{
-    display: flex;
-    justify-content: space-between;
-}
+.news{
 
-.news__events{
-    display: flex;
-    justify-content: space-between;
+    .news__heading{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .news__events{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
 }

@@ -1,8 +1,24 @@
 .header__third-row{
+
+    padding-top: 108px;
     
     .header__welcome{
         display: flex;
         flex-direction: column;
+    }
+
+    .header__detail-btn{
+        width: 260px;
+        height: 65px;
+
+        background: $yellow;
+        border-radius: 5px;
+
+        color: $white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }

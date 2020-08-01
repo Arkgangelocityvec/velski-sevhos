@@ -6,10 +6,19 @@ body{
     font-family: $roboto;
 
     background-color: #F7F7F7;
+
+    box-sizing: border-box;
 };
 
+.section{
+    margin-bottom: 100px;
+}
+
 .container{
-    max-width: 1180px;
+    max-width: 1220px;
+    padding-left: 20px;
+    padding-right: 20px;
+
     margin: 0 auto;
 };
 
@@ -25,4 +34,8 @@ a{
 
 h1, h2, h3, h4, h5, h6{
     font-family: $montserrat-medium;
+}
+
+img{
+    max-width: 100%;
 }

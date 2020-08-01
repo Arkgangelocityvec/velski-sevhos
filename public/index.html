@@ -8,7 +8,7 @@
   </head>
 </html>
 <body>
-  <header class="header">
+  <header class="section header">
     <div class="header__content">
       <div class="container">
         <!--first row-->
@@ -40,21 +40,22 @@
         <!--third row   Welcome-->
 <div class="header__third-row">
   <div class="header__welcome">
-    <h1>ДОБРО ПОЖАЛОВАТЬ</h1>
+    <h1>ДОБРО ПОЖАЛОВАТЬ!</h1>
     <p>"Вельский сельскохозяйственный техникум имени Г.И. Шибанова"</p>
-    <button class="header__detail-btn"><span>Подробнее</span><img class="header_detail-btn-arrow"></button>
+    <button class="header__detail-btn"><span>Подробнее</span><img class="header_detail-btn-arrow" src="icons/arrow-right.svg"></button>
   </div>
 </div>
       </div>
     </div>
   </header>
-<section class="news">
+<section class="section news">
   <div class="container">
-<div class="news__heading">
-  <h1>НОВОСТИ</h1>
-  <h1>ВСЕ НОВОСТИ</h1>
-</div>
-<div class="news__events">
+<div class="news__content">
+  <div class="news__heading">
+    <h1>НОВОСТИ</h1>
+    <h1>ВСЕ НОВОСТИ</h1>
+  </div>
+  <div class="news__events">
 <div class="news__event">
   <div class="news__event-content">
     <div class="news__event-head-img"><img class="news__event-img" src="images/event1.png"></div>
@@ -91,14 +92,19 @@
     </div>
   </div>
 </div>
+  </div>
 </div>
   </div>
 </section>
-<section class="information">
+<section class="section information">
   <div class="container">
 <div class="information__content">
-  <div class="for-applicants">
-    <h1>АБИТУРИЕНТАМ</h1>
+  <div class="information__for-applicants information__block">
+    <div class="information__body">
+      <div class="information__body-heading">
+        <h1>АБИТУРИЕНТАМ</h1>
+      </div>
+      <div class="information__body-links">   
 <ul><a href="/">
     <li>Документы по приёму</li></a><a href="/">
     <li>Очное отделение</li></a><a href="/">
@@ -108,10 +114,17 @@
     <li>Информация о приеме 2019</li></a><a href="/">
     <li>Информация о приеме 2020</li></a>
 </ul>
+      </div>
+    </div>
     <button class="information__detail-btn">Подробнее</button>
   </div>
-  <div class="for-students">
-    <h1>СТУДЕНТАМ</h1>
+  <div class="information__vertical-line"></div>
+  <div class="information__for-students information__block">
+    <div class="information__body">
+      <div class="information__body-heading">
+        <h1>СТУДЕНТАМ</h1>
+      </div>
+      <div class="information__body-links">
 <ul> <a href="/">
     <li>Изменение в ГИА 2020</li></a><a href="/">
     <li>Социальная поддержка студентов, лиц с ОВЗ</li></a><a href="/">
@@ -123,10 +136,17 @@
     <li>Психологическая служба</li></a><a href="/">
     <li>Документация</li></a>
 </ul>
+      </div>
+    </div>
     <button class="information__detail-btn">Подробнее</button>
   </div>
-  <div class="for-teachers">
-    <h1>ПРЕПОДАВАТЕЛЯМИ</h1>
+  <div class="information__vertical-line"></div>
+  <div class="information__for-teachers information__block">
+    <div class="information__body">
+      <div class="information__body-heading">
+        <h1>ПРЕПОДАВАТЕЛЯМИ</h1>
+      </div>
+      <div class="information__body-links">
 <ul> <a href="/">
     <li>Документы по приёму</li></a><a href="/">
     <li>Очное отделение</li></a><a href="/">
@@ -134,12 +154,14 @@
     <li>Специальности</li></a><a href="/">
     <li>Информация о приеме 2020</li></a>
 </ul>
+      </div>
+    </div>
     <button class="information__detail-btn">Подробнее</button>
   </div>
 </div>
   </div>
 </section>
-<section class="faculties">
+<section class="section faculties">
   <div class="container">
 <div class="faculties__heading">
   <h1>НАПРАВЛЕНИЯ ПОДГОТОВКИ</h1>
@@ -176,7 +198,7 @@
 </div>
   </div>
 </section>
-<section class="sources">
+<section class="section sources">
   <div class="container">
 <div class="sources__heading">
   <h1>ПОЛЕЗНЫЕ РЕСУРСЫ</h1>
@@ -191,7 +213,7 @@
 </ul>
   </div>
 </section>
-<section class="footer">
+<section class="section footer">
   <div class="container">
 <div class="footer__content">
   <div class="footer__schedule">

@@ -2,7 +2,11 @@
 @import "../components/footer/contacts.scss";
 @import "../components/footer/other.scss";
 
-.footer__content{
-    display: flex;
-    justify-content: space-between;
+    
+.footer{
+    
+    .footer__content{
+        display: flex;
+        justify-content: space-between;
+    }
 }

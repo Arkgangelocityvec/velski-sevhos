@@ -1,12 +1,19 @@
 @import "../components/header/search";
 @import "../components/header/navigation-menu.scss";
 @import "../components/header/firstRow.scss";
+@import "../components/header/secondRow.scss";
 @import "../components/header/thirdRow.scss";
 
 .header{
+    
     background: url('images/background.png');
     background-position: center center;
     background-size: cover;
 
     color: $white;
+
+    .header__content{
+        padding-top: 100px;
+        padding-bottom: 370px;
+    }
 }

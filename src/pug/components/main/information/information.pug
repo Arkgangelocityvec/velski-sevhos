@@ -1,15 +1,28 @@
 .information__content
-    .for-applicants
-        h1 АБИТУРИЕНТАМ
-        include ./applicant.pug
+    .information__for-applicants.information__block
+        .information__body
+            .information__body-heading
+                h1 АБИТУРИЕНТАМ
+            .information__body-links    
+                include ./applicant.pug
         button.information__detail-btn Подробнее
 
-    .for-students
-        h1 СТУДЕНТАМ
-        include ./students.pug
+    .information__vertical-line
+
+    .information__for-students.information__block
+        .information__body
+            .information__body-heading
+                h1 СТУДЕНТАМ
+            .information__body-links
+                include ./students.pug
         button.information__detail-btn Подробнее
 
-    .for-teachers
-        h1 ПРЕПОДАВАТЕЛЯМИ
-        include ./teachers.pug
+    .information__vertical-line
+
+    .information__for-teachers.information__block
+        .information__body
+            .information__body-heading
+                h1 ПРЕПОДАВАТЕЛЯМИ
+            .information__body-links
+                include ./teachers.pug
         button.information__detail-btn Подробнее
