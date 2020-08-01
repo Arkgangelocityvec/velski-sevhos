@@ -1,11 +1,10 @@
 .information{
 
-    background-color: #E5E5E5;
+    background-color: $grey;
     
     .information__content{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 30px;
+        display: flex;
+        justify-content: space-between;
 
     }
 
