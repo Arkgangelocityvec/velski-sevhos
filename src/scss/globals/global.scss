@@ -4,8 +4,9 @@
 body{
     margin: 0;
     font-family: $roboto;
-};
 
+    background-color: #E5E5E5;
+};
 
 .container{
     max-width: 1180px;
@@ -15,5 +16,10 @@ body{
 ul{
     list-style: none;
     padding: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
 }
 

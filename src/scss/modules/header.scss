@@ -1,15 +1,12 @@
 @import "../components/header/search";
 @import "../components/header/navigation-menu.scss";
+@import "../components/header/firstRow.scss";
+@import "../components/header/thirdRow.scss";
 
 .header{
-    //background: url('../../images/background.png');
+    background: url('images/background.png');
     background-position: center center;
     background-size: cover;
 
-    //first row
-    .header__first-row{
-        display:flex;
-        justify-content: space-between;
-    }
-
+    color: $white;
 }

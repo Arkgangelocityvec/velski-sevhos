@@ -5,11 +5,11 @@ mixin menu_item(item)
     ul
         a(href='/')
             +menu_item("Дистанционное обучение") 
-            img.header__navigation-dropdown-icon(src='../../icons/arrow-down.svg')
+            img.header__navigation-dropdown-icon(src=require('icons/arrow-down.svg'))
         
         a(href='/')
             +menu_item("Сведения об образовательной организации") 
-            img.header__navigation-dropdown-icon(src='../../icons/arrow-down.svg')
+            img.header__navigation-dropdown-icon(src=require('icons/arrow-down.svg'))
         
         a(href='/')
             +menu_item("Государственные услуги")
@@ -19,10 +19,10 @@ mixin menu_item(item)
         
         a(href='/')    
             +menu_item("Мастерские 2020") 
-            img.header__navigation-dropdown-icon(src='../../icons/arrow-down.svg')
+            img.header__navigation-dropdown-icon(src=require('icons/arrow-down.svg'))
         
         a(href='/')    
             +menu_item("Электронные обращения")
         
         li 
-            img.header__burger-menu-img(src='../../icons/burger-menu.svg')        
+            img.header__burger-menu-img(src=require('icons/burger-menu.svg'))        
