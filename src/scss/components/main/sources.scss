@@ -1,3 +1,7 @@
 .sources{
     background-color: $grey;
+
+    .sources__content{
+        display: flex;
+    }
 }

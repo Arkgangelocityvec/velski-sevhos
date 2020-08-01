@@ -1,13 +1,22 @@
 .sources__heading
     h1 ПОЛЕЗНЫЕ РЕСУРСЫ
 
-//swiper or slider
-//...
-
-//each source
-ul
-    -for (let i=0; i<3; i++)
-        .sources_source
+.swiper-container
+    .swiper-wrapper.sources__content
+        .swiper-slide.sources__source
             a(href='/')
                 img.sources__img(src=require('images/source.png'))
-
+        .swiper-slide.sources__source
+            a(href='/')
+                img.sources__img(src=require('images/source.png'))
+        .swiper-slide.sources__source
+            a(href='/')
+                img.sources__img(src=require('images/source.png'))
+        .swiper-slide.sources__source
+            a(href='/')
+                img.sources__img(src=require('images/source.png'))
+        .swiper-slide.sources__source
+            a(href='/')
+                img.sources__img(src=require('images/source.png'))
+    .swiper-button-prev
+    .swiper-button-next
