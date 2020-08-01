@@ -2,6 +2,12 @@
     background-color: $grey;
 
     .sources__content{
-        display: flex;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        
+    }
+
+    .sources__source-collection{
+        margin-top: 50px;
     }
 }

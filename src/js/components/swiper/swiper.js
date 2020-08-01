@@ -7,8 +7,9 @@ const swiper = new Swiper('.swiper-container',{
 
     direction: "horizontal",
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 5,
     slidesPerGroup: 1,
+    spaceBetween: 30,
 
     pagination: {
         el: '.swiper-pagination',
