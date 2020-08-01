@@ -5,8 +5,13 @@
     
 .footer{
     
+    color: $white;
+    background-color: #517679;
+    
     .footer__content{
         display: flex;
         justify-content: space-between;
+
+        padding-bottom: 136px;
     }
 }

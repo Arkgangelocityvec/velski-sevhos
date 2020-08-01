@@ -1,7 +1,8 @@
-.faculties__heading
-    h1 НАПРАВЛЕНИЯ ПОДГОТОВКИ
-    h1 ВСЕ НАПРАВЛЕНИЯ
+.faculties__content.content
+    .faculties__heading
+        h1 НАПРАВЛЕНИЯ ПОДГОТОВКИ
+        h1 ВСЕ НАПРАВЛЕНИЯ
 
-.faculties__faculties-list
-    -for (let i=0; i<3; i++)
-        include ./faculty.pug
+    .faculties__faculties-list
+        -for (let i=0; i<3; i++)
+            include ./faculty.pug
