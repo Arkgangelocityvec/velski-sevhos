@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const loader = require('sass-loader');
 
 module.exports = {
     
@@ -89,6 +90,11 @@ module.exports = {
                     outputPath: 'icons/',
                     esModule: false,
                 }
+            },
+
+            {
+                test: /\.js$/,
+                loader: 'babel-loader',
             },
             
            /* {

@@ -1,31 +1,29 @@
 mixin menu_item(item)
     li.header__navigation-menu-item= item
 
-.header__navigation-menu(id="app")
+nav.header__navigation-menu(id="app")
     ul
-        router-link(to= '/about')
+        router-link(to= '/remote-study')
             +menu_item("Дистанционное обучение") 
-            img.header__navigation-dropdown-icon(src=require('icons/arrow-down.svg'))
+        img.header__navigation-dropdown-icon(src=require('icons/arrow-down.svg'))
         
-        a(href='/')
+        router-link(to= '/about-edu-organization')
             +menu_item("Сведения об образовательной организации") 
-            img.header__navigation-dropdown-icon(src=require('icons/arrow-down.svg'))
+        img.header__navigation-dropdown-icon(src=require('icons/arrow-down.svg'))
         
-        a(href='/')
+        router-link(to= '/public-services')
             +menu_item("Государственные услуги")
         
-        a(href='/')    
+        router-link(to= '/anti-corruption')
             +menu_item("Противодействие коррупции")
         
-        a(href='/')    
+        router-link(to= '/workshops')
             +menu_item("Мастерские 2020") 
             img.header__navigation-dropdown-icon(src=require('icons/arrow-down.svg'))
         
-        a(href='/')    
+        router-link(to= '/appeals')
             +menu_item("Электронные обращения")
         
         li 
             img.header__burger-menu-img(src=require('icons/burger-menu.svg'))        
         
-
-    router-view

@@ -8,7 +8,90 @@
   </head>
 </html>
 <body>
-  <h1>Test</h1>
-  <div class="main"></div>
-  <div class="footer"></div>
+  <div class="contentt" id="app">
+    <header class="header">
+      <div class="container">
+        <div class="header__content content">       
+          <!--first row-->
+<div class="header__first-row"> 
+  <div class="header__first-row-left"><a class="header__logo" href="/"><img class="header__logo-img" src="icons/logo.svg"></a></div>
+  <div class="header__first-row-right">
+<div class="header__search">
+  <div class="header__search-input">
+    <input class="header__input-text" type="text" placeholder="Поиск">
+  </div>
+  <button class="header__search-btn"><a href="/"><img class="header__search-loupe-btn" src="icons/search.svg"></a></button>
+  <button class="header__site-map-btn"><a href="/"><img class="header__site-map-btn-img" src="icons/site-map.svg"></a></button>
+  <button class="header__site-eye-btn"><a href="/"><img class="header__site-eye-btn-img" src="icons/eye.svg"></a></button>
+</div>
+  </div>
+</div>
+          <!--second row-->
+          <div class="header__second-row">
+            <nav class="header__navigation-menu" id="app">
+              <ul>
+                <router-link to="/remote-study">
+                              <li class="header__navigation-menu-item">Дистанционное обучение</li>
+                </router-link><img class="header__navigation-dropdown-icon" src="icons/arrow-down.svg">
+                <router-link to="/about-edu-organization">
+                              <li class="header__navigation-menu-item">Сведения об образовательной организации</li>
+                </router-link><img class="header__navigation-dropdown-icon" src="icons/arrow-down.svg">
+                <router-link to="/public-services">
+                              <li class="header__navigation-menu-item">Государственные услуги</li>
+                </router-link>
+                <router-link to="/anti-corruption">
+                              <li class="header__navigation-menu-item">Противодействие коррупции</li>
+                </router-link>
+                <router-link to="/workshops">
+                              <li class="header__navigation-menu-item">Мастерские 2020</li><img class="header__navigation-dropdown-icon" src="icons/arrow-down.svg">
+                </router-link>
+                <router-link to="/appeals">
+                              <li class="header__navigation-menu-item">Электронные обращения</li>
+                </router-link>
+                <li> <img class="header__burger-menu-img" src="icons/burger-menu.svg"></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <router-view></router-view>
+<section class="footer">
+  <div class="container">
+    <div class="footer__content content">
+<div class="footer__schedule">
+  <h1>ГРАФИК РАБОТЫ</h1>
+<ul>
+  <li>ПН-ПТ: С 8:00 до 16:15</li>
+  <li>ОБЕД: С 12:00 до 13:00</li>
+  <li>ВЫХОДНОЙ: суббота, воскресенье</li>
+  <li> <a href="#"><img class="schedule__vk-icon" src="icons/vk.svg"></a></li>
+</ul>
+</div>
+<div class="footer__contacts">
+  <h1>КОНТАКТНАЯ ИНФОРМАЦИЯ</h1>
+<ul>
+  <li>165150 г. Вельск ул. Дзержинского, д.88</li>
+  <li>Директор (881836) 6-11-05</li>
+  <li>Учебная часть (881836) 6-05-54</li>
+  <li>Приемная комиссия (881836) 6-30-57</li>
+  <li>Бухгалтерия (881836) 6-17-70 </li>
+  <li>Электронная почта: vst.29@yandex.ru</li>
+</ul>
+</div>
+<div class="footer__other">
+<ul><a href="/">
+    <li>Дистанционное обучение</li></a><a href="/">
+    <li>Сведения об образовательной организации</li></a><a href="/">
+    <li>Государственные услуги</li></a><a href="/">
+    <li>Противодействие коррупции</li></a><a href="/">
+    <li>Мастерские 2020</li></a><a href="/">
+    <li>Электронные обращения</li></a>
+  <li><a href="/"><img class="footer__sputnik-img" src="icons/Спутник.svg"></a></li>
+</ul>
+</div>
+    </div>
+  </div>
+</section>
+  </div>
 <script src="index.bundle.js"></script></body>

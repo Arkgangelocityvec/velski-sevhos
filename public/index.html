@@ -8,10 +8,11 @@
   </head>
 </html>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__content content">       
-        <!--first row-->
+  <div class="contentt" id="app">
+    <header class="header">
+      <div class="container">
+        <div class="header__content content">       
+          <!--first row-->
 <div class="header__first-row"> 
   <div class="header__first-row-left"><a class="header__logo" href="/"><img class="header__logo-img" src="icons/logo.svg"></a></div>
   <div class="header__first-row-right">
@@ -25,206 +26,44 @@
 </div>
   </div>
 </div>
-        <!--second row-->
-        <div class="header__second-row">
-          <div class="header__navigation-menu" id="app">
-            <ul>
-              <router-link to="/about">
-                          <li class="header__navigation-menu-item">Дистанционное обучение</li><img class="header__navigation-dropdown-icon" src="icons/arrow-down.svg">
-              </router-link><a href="/">
-                          <li class="header__navigation-menu-item">Сведения об образовательной организации</li><img class="header__navigation-dropdown-icon" src="icons/arrow-down.svg"></a><a href="/">
-                          <li class="header__navigation-menu-item">Государственные услуги</li></a><a href="/">   
-                          <li class="header__navigation-menu-item">Противодействие коррупции</li></a><a href="/">   
-                          <li class="header__navigation-menu-item">Мастерские 2020</li><img class="header__navigation-dropdown-icon" src="icons/arrow-down.svg"></a><a href="/">   
-                          <li class="header__navigation-menu-item">Электронные обращения</li></a>
-              <li> <img class="header__burger-menu-img" src="icons/burger-menu.svg"></li>
-            </ul>
-            <router-view></router-view>
+          <!--second row-->
+          <div class="header__second-row">
+            <nav class="header__navigation-menu" id="app">
+              <ul>
+                <router-link to="/remote-study">
+                              <li class="header__navigation-menu-item">Дистанционное обучение</li>
+                </router-link><img class="header__navigation-dropdown-icon" src="icons/arrow-down.svg">
+                <router-link to="/about-edu-organization">
+                              <li class="header__navigation-menu-item">Сведения об образовательной организации</li>
+                </router-link><img class="header__navigation-dropdown-icon" src="icons/arrow-down.svg">
+                <router-link to="/public-services">
+                              <li class="header__navigation-menu-item">Государственные услуги</li>
+                </router-link>
+                <router-link to="/anti-corruption">
+                              <li class="header__navigation-menu-item">Противодействие коррупции</li>
+                </router-link>
+                <router-link to="/workshops">
+                              <li class="header__navigation-menu-item">Мастерские 2020</li><img class="header__navigation-dropdown-icon" src="icons/arrow-down.svg">
+                </router-link>
+                <router-link to="/appeals">
+                              <li class="header__navigation-menu-item">Электронные обращения</li>
+                </router-link>
+                <li> <img class="header__burger-menu-img" src="icons/burger-menu.svg"></li>
+              </ul>
+            </nav>
+          </div>
+          <!--third row   Welcome-->
+          <div class="header__third-row">
+            <div class="header__welcome">
+              <h1 class="header__welcome-title">ДОБРО ПОЖАЛОВАТЬ!</h1>
+              <p class="header__welcome-body">"Вельский сельскохозяйственный техникум имени Г.И. Шибанова"</p>
+              <button class="header__detail-btn"><span class="header__detail-btn-text button-text">Подробнее</span><img class="header__detail-btn-arrow" src="icons/arrow-right.svg"></button>
+            </div>
           </div>
         </div>
-        <!--third row   Welcome-->
-<div class="header__third-row">
-  <div class="header__welcome">
-    <h1 class="header__welcome-title">ДОБРО ПОЖАЛОВАТЬ!</h1>
-    <p class="header__welcome-body">"Вельский сельскохозяйственный техникум имени Г.И. Шибанова"</p>
-    <button class="header__detail-btn"><span class="header__detail-btn-text button-text">Подробнее</span><img class="header__detail-btn-arrow" src="icons/arrow-right.svg"></button>
-  </div>
-</div>
       </div>
-    </div>
-  </header>
-<section class="news">
-  <div class="container">
-<div class="news__content content">
-  <div class="news__heading">
-    <h1>НОВОСТИ</h1>
-    <h1>ВСЕ НОВОСТИ</h1>
-  </div>
-  <div class="news__events">
-<div class="news__event">
-  <div class="news__event-content">
-    <div class="news__event-head-img"><img class="news__event-img" src="images/event1.png"></div>
-    <div class="news__event-body">
-      <h1 class="news__event-title">Ярмарка 2020</h1><span class="news__event-date">21.05.2020</span>
-      <p class="news_event-description">
-        Студенты и преподаватели техникума принимают участие 
-        в ярмарке предпринимательских идей на центральной площади Вельска.
-      </p><a>подробнее</a>
-    </div>
-  </div>
-</div>
-<div class="news__event">
-  <div class="news__event-content">
-    <div class="news__event-head-img"><img class="news__event-img" src="images/event1.png"></div>
-    <div class="news__event-body">
-      <h1 class="news__event-title">Ярмарка 2020</h1><span class="news__event-date">21.05.2020</span>
-      <p class="news_event-description">
-        Студенты и преподаватели техникума принимают участие 
-        в ярмарке предпринимательских идей на центральной площади Вельска.
-      </p><a>подробнее</a>
-    </div>
-  </div>
-</div>
-<div class="news__event">
-  <div class="news__event-content">
-    <div class="news__event-head-img"><img class="news__event-img" src="images/event1.png"></div>
-    <div class="news__event-body">
-      <h1 class="news__event-title">Ярмарка 2020</h1><span class="news__event-date">21.05.2020</span>
-      <p class="news_event-description">
-        Студенты и преподаватели техникума принимают участие 
-        в ярмарке предпринимательских идей на центральной площади Вельска.
-      </p><a>подробнее</a>
-    </div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</section>
-<section class="information">
-  <div class="container">
-<div class="information__content">
-  <div class="information__for-applicants information__block">
-    <div class="information__body">
-      <div class="information__body-heading">
-        <h1>АБИТУРИЕНТАМ</h1>
-      </div>
-      <div class="information__body-links">   
-<ul><a href="/">
-    <li>Документы по приёму</li></a><a href="/">
-    <li>Очное отделение</li></a><a href="/">
-    <li>Заочное отделение</li></a><a href="/">
-    <li>Специальности</li></a><a href="/">
-    <li>Информация о приеме 2018</li></a><a href="/">
-    <li>Информация о приеме 2019</li></a><a href="/">
-    <li>Информация о приеме 2020</li></a>
-</ul>
-      </div>
-    </div>
-    <button class="information__detail-btn button-text">Подробнее</button>
-  </div>
-  <div class="information__vertical-line"></div>
-  <div class="information__for-students information__block">
-    <div class="information__body">
-      <div class="information__body-heading">
-        <h1>СТУДЕНТАМ</h1>
-      </div>
-      <div class="information__body-links">
-<ul> <a href="/">
-    <li>Изменение в ГИА 2020</li></a><a href="/">
-    <li>Социальная поддержка студентов, лиц с ОВЗ</li></a><a href="/">
-    <li>EГЭ</li></a><a href="/">
-    <li>Дипломная работа</li></a><a href="/">
-    <li>Курсовой проект</li></a><a href="/">
-    <li>Индивидуальный проект</li></a><a href="/">
-    <li>Клуб Отечество</li></a><a href="/">
-    <li>Психологическая служба</li></a><a href="/">
-    <li>Документация</li></a>
-</ul>
-      </div>
-    </div>
-    <button class="information__detail-btn button-text">Подробнее</button>
-  </div>
-  <div class="information__vertical-line"></div>
-  <div class="information__for-teachers information__block">
-    <div class="information__body">
-      <div class="information__body-heading">
-        <h1>ПРЕПОДАВАТЕЛЯМИ</h1>
-      </div>
-      <div class="information__body-links">
-<ul> <a href="/">
-    <li>Документы по приёму</li></a><a href="/">
-    <li>Очное отделение</li></a><a href="/">
-    <li>Заочное отделение</li></a><a href="/">
-    <li>Специальности</li></a><a href="/">
-    <li>Информация о приеме 2020</li></a>
-</ul>
-      </div>
-    </div>
-    <button class="information__detail-btn button-text">Подробнее</button>
-  </div>
-</div>
-  </div>
-</section>
-<section class="faculties">
-  <div class="container">
-<div class="faculties__content content">
-  <div class="faculties__heading">
-    <h1>НАПРАВЛЕНИЯ ПОДГОТОВКИ</h1>
-    <h1>ВСЕ НАПРАВЛЕНИЯ</h1>
-  </div>
-  <div class="faculties__faculties-list">
-<div class="faculties__faculty">
-  <div class="faculties__faculty-content">
-    <div class="faculties__faculty-head-img"><img class="faculties__faculty-img" src="images/faculty.png"></div>
-    <div class="faculty__faculty-body">
-      <h1>ЗЕМЛЕУСТРОЙСТВО</h1><a NaN>
-         подробнее</a>
-    </div>
-  </div>
-</div>
-<div class="faculties__faculty">
-  <div class="faculties__faculty-content">
-    <div class="faculties__faculty-head-img"><img class="faculties__faculty-img" src="images/faculty.png"></div>
-    <div class="faculty__faculty-body">
-      <h1>ЗЕМЛЕУСТРОЙСТВО</h1><a NaN>
-         подробнее</a>
-    </div>
-  </div>
-</div>
-<div class="faculties__faculty">
-  <div class="faculties__faculty-content">
-    <div class="faculties__faculty-head-img"><img class="faculties__faculty-img" src="images/faculty.png"></div>
-    <div class="faculty__faculty-body">
-      <h1>ЗЕМЛЕУСТРОЙСТВО</h1><a NaN>
-         подробнее</a>
-    </div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-</section>
-<section class="sources">
-  <div class="container">
-<div class="sources__content content">
-  <div class="sources__heading">
-    <h1>ПОЛЕЗНЫЕ РЕСУРСЫ</h1>
-  </div>
-  <div class="swiper-container sources__source-collection">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide sources__source"><a href="/"><img class="sources__img" src="images/source.png"></a></div>
-      <div class="swiper-slide sources__source"><a href="/"><img class="sources__img" src="images/source.png"></a></div>
-      <div class="swiper-slide sources__source"><a href="/"><img class="sources__img" src="images/source.png"></a></div>
-      <div class="swiper-slide sources__source"><a href="/"><img class="sources__img" src="images/source.png"></a></div>
-      <div class="swiper-slide sources__source"><a href="/"><img class="sources__img" src="images/2.png"></a></div>
-    </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-</div>
-  </div>
-</section>
+    </header>
+    <router-view></router-view>
 <section class="footer">
   <div class="container">
     <div class="footer__content content">
@@ -262,4 +101,5 @@
     </div>
   </div>
 </section>
+  </div>
 <script src="index.bundle.js"></script></body>

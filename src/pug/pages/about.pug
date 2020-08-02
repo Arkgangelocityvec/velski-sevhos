@@ -1,8 +1,8 @@
 extends ../layout/layout.pug
 
 block header
-    h1 Test
+    include ../modules/header.pug
 block main
-    .main
+    router-view
 block footer
-    .footer
+    include ../modules/footer.pug

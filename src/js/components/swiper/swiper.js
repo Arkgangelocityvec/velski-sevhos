@@ -3,6 +3,8 @@ import 'swiper/swiper-bundle.css';
 
 Swiper.use([Navigation, Pagination])
 
+
+
 const swiper = new Swiper('.swiper-container',{
 
     direction: "horizontal",
@@ -25,3 +27,5 @@ const swiper = new Swiper('.swiper-container',{
     },*/
 
 })
+
+console.log('swiper')

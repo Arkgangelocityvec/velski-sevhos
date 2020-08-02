@@ -1,0 +1,21 @@
+header.header
+    .container
+        .header__content.content        
+            //first row
+            include ../../components/header/first-row.pug
+            
+            //second row
+            .header__second-row
+                include ../../components/header/navigation_menu.pug
+
+            
+            //third row   Welcome
+            .header__third-row
+                .header__welcome
+                    h1.header__welcome-title ДОБРО ПОЖАЛОВАТЬ!
+                    p.header__welcome-body "Вельский сельскохозяйственный техникум имени Г.И. Шибанова"
+                    button.header__detail-btn
+                        span.header__detail-btn-text.button-text Подробнее
+                        img.header__detail-btn-arrow(src="icons/arrow-right.svg")
+
+
