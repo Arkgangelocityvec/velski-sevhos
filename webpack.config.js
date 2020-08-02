@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
     
@@ -20,6 +21,7 @@ module.exports = {
     },
 
     plugins:[
+        new VueLoaderPlugin(),
         /*new CopyPlugin({
             patterns: [
                 {from: 'src/images', to: 'images' },
@@ -46,12 +48,20 @@ module.exports = {
     resolve: {
         alias: {
           images: path.resolve(__dirname, 'src/images/'),
-          icons: path.resolve(__dirname, 'src/icons/')
+          icons: path.resolve(__dirname, 'src/icons/'),
+          vue: 'vue/dist/vue.js',
+          'vue-router':  'vue-router/dist/vue-router.js',
         },
     },
   
     module:{
         rules: [
+
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
+            },
+
             {
                 test: /\.s?css$/,
                 use: ['style-loader', 'css-loader', 'sass-loader']

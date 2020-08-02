@@ -27,9 +27,11 @@
 </div>
         <!--second row-->
         <div class="header__second-row">
-          <div class="header__navigation-menu">
-            <ul><a href="/">
-                          <li class="header__navigation-menu-item">Дистанционное обучение</li><img class="header__navigation-dropdown-icon" src="icons/arrow-down.svg"></a><a href="/">
+          <div class="header__navigation-menu" id="app">
+            <ul>
+              <router-link to="/about">
+                          <li class="header__navigation-menu-item">Дистанционное обучение</li><img class="header__navigation-dropdown-icon" src="icons/arrow-down.svg">
+              </router-link><a href="/">
                           <li class="header__navigation-menu-item">Сведения об образовательной организации</li><img class="header__navigation-dropdown-icon" src="icons/arrow-down.svg"></a><a href="/">
                           <li class="header__navigation-menu-item">Государственные услуги</li></a><a href="/">   
                           <li class="header__navigation-menu-item">Противодействие коррупции</li></a><a href="/">   
@@ -37,6 +39,7 @@
                           <li class="header__navigation-menu-item">Электронные обращения</li></a>
               <li> <img class="header__burger-menu-img" src="icons/burger-menu.svg"></li>
             </ul>
+            <div class="router-view"></div>
           </div>
         </div>
         <!--third row   Welcome-->
