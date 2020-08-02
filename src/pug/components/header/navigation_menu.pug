@@ -1,7 +1,7 @@
 mixin menu_item(item)
     li.header__navigation-menu-item= item
 
-.header__navigation-menu(id='app')
+.header__navigation-menu(id="app")
     ul
         router-link(to= '/about')
             +menu_item("Дистанционное обучение") 
@@ -28,4 +28,4 @@ mixin menu_item(item)
             img.header__burger-menu-img(src=require('icons/burger-menu.svg'))        
         
 
-    .router-view
+    router-view

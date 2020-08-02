@@ -33,6 +33,10 @@ module.exports = {
             filename: 'index.html',
             template: './src/pug/pages/index.pug'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'about.html',
+            template: './src/pug/pages/about.pug'
+        }),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilenamw: "[id].css"
@@ -110,10 +114,21 @@ module.exports = {
 
             {
                 test: /\.pug$/,
-                loader: 'pug-loader',
-                options: {
-                    pretty: true,
-                },
+                oneOf: [
+                  // это применяется к `<template lang="pug">` в компонентах Vue
+                  {
+                    resourceQuery: /^\?vue/,
+                    use: ['pug-plain-loader']
+                    
+                  },
+                  // это применяется к импортам pug внутри JavaScript
+                  {
+                    loader: 'pug-loader',
+                    options: {
+                        pretty: true,
+                    }
+                  }
+                ]
             }
 
         ]

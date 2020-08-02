@@ -1,5 +1,4 @@
-<template>
-    <section class="about">
-        <h1>about</h1>
-    </section>
+<template lang="pug">
+    section.about
+        h1 aboutEd
 </template>
