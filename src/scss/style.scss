@@ -2,6 +2,8 @@
 @import "./globals/vars";
 @import "./globals/global";
 
-@import "./modules/header.scss";
-@import "./modules/main.scss";
-@import "./modules/footer.scss"
+@import "./modules/footer.scss";
+
+//main-page
+@import "./pages/index/header.scss";
+@import "./pages/index/main.scss";
