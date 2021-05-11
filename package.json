@@ -37,7 +37,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "node-sass": "^4.14.1",
     "pug": "^3.0.0",
     "pug-loader": "^2.4.0",
